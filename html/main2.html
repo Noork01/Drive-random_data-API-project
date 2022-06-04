@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Choose Data</title>
+		<style>
+			body, form{
+				margin: 0 auto;
+				max-width:800px;
+				overflow-x:hidden;
+			}
+			fieldset{
+				display: flex;
+			}
+			input#artist{
+				flex-grow:100;
+				margin: 0 20px;
+			}
+            ul {
+                columns: 2;
+                -webkit-columns: 2;
+                -moz-columns: 2;
+            }
+		</style>
+	</head>
+	<body>
+        <h1>Choose one from this list of Data Sets and input the size of the data you want</h1>
+        <h1>This is case sensitive</h1>
+        <div>
+            
+            <ul class="columns" data-columns="3">
+                <li>Address</li>
+                <li>Appliance</li>
+                <li>App</li>
+                <li>Bank</li>
+                <li>Beer</li>
+                <li>Blood</li>
+                <li>Business Credit Card</li>
+                <li>Cannabis</li>
+                <li>Code</li>
+                <li>Coffee</li>
+                <li>Commerce</li>
+                <li>Company</li>
+                <li>Computer</li>
+                <li>Crypto</li>
+                <li>CryptoCoin</li>
+                <li>Color</li>
+                <li>Dessert</li>
+                <li>Device</li>
+                <li>Food</li>
+                <li>Name</li>
+                <li>Hipster</li>
+                <li>Invoice</li>
+                <li>Users</li>
+                <li>Stripe</li>
+                <li>Subscription</li>
+                <li>Vehicle</li>
+                <li>ID Number</li>
+                <li>Internet Stuff</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Flickr</li>
+                <li>Lorem Pixel</li>
+                <li>Nation</li>
+                <li>Number</li>
+                <li>Phone Number</li>
+                <li>Placeholdit</li>
+                <li>Restaurant</li>
+            </ul>
+        </div>
+		<form action="/Data_input" method="get">
+			<fieldset>
+				<label for="data_type">Which Data</label>
+				<input id="data_type" name="data_type" type="text" />
+                <label for="amount">Amount:</label>
+				<input id="amount" name="amount" type="text" />
+				<input type="submit" value="Search" />
+			</fieldset>
+		</form>
+	</body>
+</html>
